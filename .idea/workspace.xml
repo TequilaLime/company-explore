@@ -5,48 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dda58546-2aa8-4f94-a41b-ef70fec5eaa1" name="Changes" comment="init commit and working solution">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/CompanyExploreApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/AsyncExecutorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/BytesToOffsetDateTimeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/CsvCompaniesExtractorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/ElasticsearchClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/ModelMapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/NewsArticleExtractorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/OffsetDateTimeToBytesConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/controller/CompanyMentionsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/CompanyMention.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/CompanyMentionsCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/NewsArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/CompanyMentionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/NewsArticleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/NewsArticleSearchable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/extractor/CsvCompanyExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/extractor/NewsArticleExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/repository/CompanyMentionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/repository/NewsArticleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/service/CompanyMentionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/service/InitializationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/service/NewsArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/util/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/company/explore/IntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/company/explore/controller/CompanyMentionsControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/160408_company_list.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-testContainers.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/5BW9-V371-F11P-X3RN.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/CompanyMention.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/CompanyMention.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/CompanyMentionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/CompanyMentionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/NewsArticleSearchable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/NewsArticleSearchable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/company/explore/extractor/CsvCompanyExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/extractor/CsvCompanyExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/company/explore/service/CompanyMentionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/service/CompanyMentionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/company/explore/util/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/util/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/company/explore/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/company/explore/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/company/explore/controller/CompanyMentionsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/company/explore/controller/CompanyMentionsControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,25 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/daniyar/projects/company-explore/company-explore/src/test/resources",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "database.data.views",
-    "spring.configuration.checksum": "9b98bab6cdacf86bdd1399edf0aa3b6d"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/daniyar/projects/company-explore/company-explore/src/test/resources&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9b98bab6cdacf86bdd1399edf0aa3b6d&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.company.explore.dto" />
@@ -246,8 +213,17 @@
       <workItem from="1662482901563" duration="1242000" />
       <workItem from="1662484344160" duration="14832000" />
       <workItem from="1662541647658" duration="882000" />
-      <workItem from="1662542544559" duration="28926000" />
+      <workItem from="1662542544559" duration="29521000" />
+      <workItem from="1662582496444" duration="178000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit and working solution">
+      <created>1662581739389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662581739389</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

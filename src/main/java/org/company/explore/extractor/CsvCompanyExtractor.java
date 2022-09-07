@@ -27,13 +27,14 @@ public class CsvCompanyExtractor {
 
     @SneakyThrows
     private CsvToBean<CsvCompanyExtractor.Company> createDefaultBean() {
-        return new CsvToBeanBuilder<CsvCompanyExtractor.Company>(new FileReader(getPath())).withType(CsvCompanyExtractor.Company .class).withSeparator(';').withSkipLines(1).build();
+        return new CsvToBeanBuilder<CsvCompanyExtractor.Company>(new FileReader(getPath())).withType(CsvCompanyExtractor.Company.class).withSeparator(';').withSkipLines(1).build();
     }
 
 
     /**
      * Designed to be used once in the application context.
      * Should you use multiple times, create additional object of this instance.
+     *
      * @return
      */
     public List<CsvCompanyExtractor.Company> getCompaniesListFromPath() {

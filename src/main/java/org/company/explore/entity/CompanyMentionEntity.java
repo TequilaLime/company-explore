@@ -23,5 +23,6 @@ public class CompanyMentionEntity implements Serializable {
     @Id
     private Integer id;
     private String companyName;
-    @Builder.Default private List<NewsArticleEntity> mentions = new ArrayList<>();
+    @Builder.Default
+    private List<NewsArticleEntity> mentions = new ArrayList<>();
 }

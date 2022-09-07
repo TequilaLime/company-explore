@@ -40,31 +40,22 @@ public class CompanyMentionService {
         }
         log.debug("mentions are found, saving or updating information");
         companyMentionRepository.findById(entity.getId()).ifPresentOrElse(existingEntity -> {
-                    if (existingEntity.equals(entity)) {
-                        log.debug("2 entities are equals, there is no need for update");
-                    } else {
-                        log.debug("entity already exists and not equal to new => just update the entity");
-                        existingEntity.setMentions(entity.getMentions());
-                        companyMentionRepository.save(existingEntity);
-                    }
-                },
-                () -> {
-                    log.debug("saving new entity");
-                    companyMentionRepository.save(entity);
-                });
+            if (existingEntity.equals(entity)) {
+                log.debug("2 entities are equals, there is no need for update");
+            } else {
+                log.debug("entity already exists and not equal to new => just update the entity");
+                existingEntity.setMentions(entity.getMentions());
+                companyMentionRepository.save(existingEntity);
+            }
+        }, () -> {
+            log.debug("saving new entity");
+            companyMentionRepository.save(entity);
+        });
 
     }
 
     public CompanyMentionsCollection getCompanyMentions(Integer page, Integer size) {
         Page<CompanyMentionEntity> all = companyMentionRepository.findAll(PageRequest.of(page, size, Sort.by("id").ascending()));
-        return CompanyMentionsCollection.builder()
-                .items(all.getContent().stream()
-                        .map(entity -> CompanyMention.builder()
-                                .id(entity.getId())
-                                .companyName(entity.getCompanyName())
-                                .mentions(entity.getMentions().stream().map(NewsArticleEntity::getId).collect(Collectors.toList()))
-                                .build())
-                        .collect(Collectors.toList()))
-                .totalCount(all.getTotalElements()).build();
+        return CompanyMentionsCollection.builder().items(all.getContent().stream().map(entity -> CompanyMention.builder().id(entity.getId()).companyName(entity.getCompanyName()).mentions(entity.getMentions().stream().map(NewsArticleEntity::getId).collect(Collectors.toList())).build()).collect(Collectors.toList())).totalCount(all.getTotalElements()).build();
     }
 }

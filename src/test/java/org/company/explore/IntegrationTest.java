@@ -31,10 +31,10 @@ import javax.annotation.PostConstruct;
 public class IntegrationTest {
 
     public static ElasticsearchContainer elasticsearchContainer =
-            new ElasticsearchContainer(DockerImageName.parse("docker.elastic.co/elasticsearch/elasticsearch:7.15.2-arm64")).withExposedPorts(9200, 9300);
+        new ElasticsearchContainer(DockerImageName.parse("docker.elastic.co/elasticsearch/elasticsearch:7.15.2-arm64")).withExposedPorts(9200, 9300);
 
     public static GenericContainer redisDBContainer =
-            new GenericContainer(DockerImageName.parse("redis:7.0.4")).withExposedPorts(6379);
+        new GenericContainer(DockerImageName.parse("redis:7.0.4")).withExposedPorts(6379);
 
 
     static {

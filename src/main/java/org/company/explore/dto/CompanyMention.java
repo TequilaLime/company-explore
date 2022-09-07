@@ -16,5 +16,6 @@ public class CompanyMention {
 
     private Integer id;
     private String companyName;
-    @Builder.Default private List<String> mentions = new ArrayList<>();
+    @Builder.Default
+    private List<String> mentions = new ArrayList<>();
 }

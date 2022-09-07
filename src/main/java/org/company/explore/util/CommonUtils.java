@@ -29,39 +29,35 @@ public class CommonUtils {
     @SneakyThrows
     public static List<File> getListOfNewsArticles(String path) {
         try (Stream<Path> paths = Files.walk(Paths.get(path))) {
-            return paths.filter(Files::isRegularFile)
-                    .map(Path::toFile)
-                    .collect(Collectors.toList());
+            return paths.filter(Files::isRegularFile).map(Path::toFile).collect(Collectors.toList());
         }
     }
 
     @SneakyThrows
     public static CompletableFuture<NewsArticleEntity> extractNewsArticleFromFile(File file, XmlMapper mapper, UnaryOperator<NewsArticleEntity> supplier) {
         return CompletableFuture.supplyAsync(() -> {
-                    log.debug("starting to extract article {}", file.getName());
-                    NewsArticleEntity newsArticleEntity;
-                    try {
-                        newsArticleEntity = mapper.readValue(file, NewsArticleEntity.class);
-                    } catch (IOException e) {
-                        log.error("error reading news article from file {}: {}", file.getName(), e);
-                        return null;
-                    }
-                    newsArticleEntity.setId(FilenameUtils.removeExtension(file.getName()));
-                    return newsArticleEntity;
-                })
-                .thenApply(articleEntity -> {
-                    if (articleEntity != null) {
-                        log.debug("saving article {}", file.getName());
-                        return supplier.apply(articleEntity);
-                    } else {
-                        log.debug("article was null, please check error log above {}", file.getName());
-                        return null;
-                    }
-                })
-                .exceptionally(e -> {
-                    log.error("error extracting news article from file {}: {}", file.getName(), e);
-                    return null;
-                });
+            log.debug("starting to extract article {}", file.getName());
+            NewsArticleEntity newsArticleEntity;
+            try {
+                newsArticleEntity = mapper.readValue(file, NewsArticleEntity.class);
+            } catch (IOException e) {
+                log.error("error reading news article from file {}: {}", file.getName(), e);
+                return null;
+            }
+            newsArticleEntity.setId(FilenameUtils.removeExtension(file.getName()));
+            return newsArticleEntity;
+        }).thenApply(articleEntity -> {
+            if (articleEntity != null) {
+                log.debug("saving article {}", file.getName());
+                return supplier.apply(articleEntity);
+            } else {
+                log.debug("article was null, please check error log above {}", file.getName());
+                return null;
+            }
+        }).exceptionally(e -> {
+            log.error("error extracting news article from file {}: {}", file.getName(), e);
+            return null;
+        });
     }
 
     public static <R> List<R> getAllItems(String searchTerm, int totalLimit, int fetchLimit, TriFunction<String, Integer, Integer, List<R>> triFunction) {

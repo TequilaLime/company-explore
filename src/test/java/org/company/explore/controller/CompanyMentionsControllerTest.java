@@ -28,7 +28,12 @@ class CompanyMentionsControllerTest extends IntegrationTest {
         given()
                 .get(getBaseUrl() + "/company-mentions?page=0&size=20")
                 .then().log().all().extract().response()
-                .then().assertThat().statusCode(200).assertThat().body(containsString("{\"id\":20,\"companyName\":\"Bank of America Corp (BofA)\",\"mentions\":[\"5BW9-V371-F11P-X3RN\"]}"))
-                .assertThat().body(containsString("{\"id\":113,\"companyName\":\"Wells Fargo & Co\",\"mentions\":[\"5BW9-V371-F11P-X3RN\"]}"));
+                .then()
+                .assertThat()
+                .statusCode(200)
+                .assertThat()
+                .body(containsString("{\"id\":20,\"companyName\":\"Bank of America Corp (BofA)\",\"mentions\":[\"5BW9-V371-F11P-X3RN\"]}"))
+                .assertThat()
+                .body(containsString("{\"id\":113,\"companyName\":\"Wells Fargo & Co\",\"mentions\":[\"5BW9-V371-F11P-X3RN\"]}"));
     }
 }
