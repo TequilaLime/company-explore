@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dda58546-2aa8-4f94-a41b-ef70fec5eaa1" name="Changes" comment="init commit and working solution">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/CompanyExploreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/AsyncExecutorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/BytesToOffsetDateTimeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/CsvCompaniesExtractorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/ElasticsearchClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/NewsArticleExtractorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/OffsetDateTimeToBytesConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/configurations/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/controller/CompanyMentionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/CompanyMention.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/CompanyMentionsCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/dto/NewsArticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/CompanyMentionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/NewsArticleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/entity/NewsArticleSearchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/extractor/CsvCompanyExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/extractor/NewsArticleExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/repository/CompanyMentionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/repository/NewsArticleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/service/CompanyMentionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/service/InitializationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/service/NewsArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/company/explore/util/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/company/explore/IntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/company/explore/controller/CompanyMentionsControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/160408_company_list.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-testContainers.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data/5BW9-V371-F11P-X3RN.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="gke-mip-prod" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ELp7bow8rH9lgxLPgC8eNILNW8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/Users/daniyar/projects/company-explore/company-explore/src/test/resources",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.data.views",
+    "spring.configuration.checksum": "9b98bab6cdacf86bdd1399edf0aa3b6d"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.company.explore.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/resources/data" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/data" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.company.explore" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CompanyMentionsControllerTest">
+    <configuration name="CompanyMentionsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="company-explore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.company.explore.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.company.explore.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.company.explore.controller.CompanyMentionsControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyMentionsControllerTest.getCompanyMentions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="company-explore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.company.explore.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.company.explore.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.company.explore.controller.CompanyMentionsControllerTest" />
+      <option name="METHOD_NAME" value="getCompanyMentions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyMentionsControllerTest.name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="company-explore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.company.explore.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.company.explore.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.company.explore.controller.CompanyMentionsControllerTest" />
+      <option name="METHOD_NAME" value="name" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyExploreApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="company-explore" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.company.explore.CompanyExploreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyExploreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="company-explore" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.company.explore.companyexplore.CompanyExploreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="$PROJECT_DIR$/gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="$PROJECT_DIR$/api-specifications.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.company-explore-elasticsearch: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="company-explore-elasticsearch" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CompanyMentionsControllerTest" />
+        <item itemvalue="JUnit.CompanyMentionsControllerTest.getCompanyMentions" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="JUnit.CompanyMentionsControllerTest.name" />
+        <item itemvalue="Docker.docker-compose.yml.company-explore-elasticsearch: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dda58546-2aa8-4f94-a41b-ef70fec5eaa1" name="Changes" comment="" />
+      <created>1662384554013</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662384554013</updated>
+      <workItem from="1662384556744" duration="24383000" />
+      <workItem from="1662480737417" duration="2012000" />
+      <workItem from="1662482901563" duration="1242000" />
+      <workItem from="1662484344160" duration="14832000" />
+      <workItem from="1662541647658" duration="882000" />
+      <workItem from="1662542544559" duration="28926000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init commit and working solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit and working solution" />
+  </component>
+</project>

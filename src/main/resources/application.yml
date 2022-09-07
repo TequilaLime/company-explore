@@ -1,0 +1,46 @@
+spring:
+  jackson:
+    default-property-inclusion: NON_NULL
+    deserialization:
+      ADJUST_DATES_TO_CONTEXT_TIME_ZONE: false
+  application:
+    name: company-explore
+  redis:
+    host: localhost
+    port: 6379
+
+  elasticsearch:
+    uris: localhost:9200
+
+org:
+  company:
+    explore:
+      data:
+        path: /Users/daniyar/Downloads/160502_data/data
+      csv:
+        path: /Users/daniyar/Downloads/160502_data/160408_company_list.csv
+
+server:
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 10
+    mbeanregistry:
+      enabled: true
+  servlet:
+    context-path: /${spring.application.name}
+  error:
+    include-message: always
+
+logging:
+  level:
+    ROOT: WARN
+    org.apache.tomcat: INFO
+    org.apache.catalina: INFO
+    com.sun.xml: WARN
+    javax.xml: WARN
+    org.hibernate: ERROR
+    org.springframework: WARN
+    org.springframework.web: WARN
+    feign.Logger: WARN
+    org.company.explore: WARN

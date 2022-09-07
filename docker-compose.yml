@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+
+  # Please select correct image according to your chip architecture, I have the ARM chip, therefore I selected arm64 image
+  # If you have intel or amd chips please select amd64.
+  # Also please make sure you have enough resources in your docker.
+  # Should you use other OCI than docker, please adopt with exact image versions.
+  company-explore-elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.2-arm64
+    # image: docker.elastic.co/elasticsearch/elasticsearch:7.15.2-amd64
+    container_name: elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - company-explore-elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+  #standalone mode, no clustering
+  company-explore-redis:
+    container_name: company-explore-redis
+    image: redis:7.0.4
+    ports:
+      - "6379:6379"
+
+
+volumes:
+  company-explore-elasticsearch-data:
+    driver: local
