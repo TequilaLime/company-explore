@@ -52,9 +52,9 @@ public class NewsArticleService {
         return allItems;
     }
 
-    private List<NewsArticleEntity> getNewsArticles(String searchTerm, int limit, int offset) {
+    private List<NewsArticleEntity> getNewsArticles(String searchTerm, int limit, int page) {
         QueryBuilder queryBuilder = QueryBuilders.multiMatchQuery(searchTerm, NewsArticleSearchable.TITLE, NewsArticleSearchable.TEXT).operator(Operator.AND);
-        NativeSearchQuery build = new NativeSearchQueryBuilder().withQuery(queryBuilder).withPageable(PageRequest.of(offset, limit)).build();
+        NativeSearchQuery build = new NativeSearchQueryBuilder().withQuery(queryBuilder).withPageable(PageRequest.of(page, limit)).build();
         SearchHits<NewsArticleEntity> searchResults = elasticsearchRestTemplate.search(build, NewsArticleEntity.class);
 
         return searchResults.stream().map(s -> NewsArticleEntity.builder().id(s.getId()).build()).collect(Collectors.toList());

@@ -34,8 +34,12 @@ services:
     image: redis:7.0.4
     ports:
       - "6379:6379"
+    volumes:
+      - company-explore-redis-data:/data
 
 
 volumes:
   company-explore-elasticsearch-data:
+    driver: local
+  company-explore-redis-data:
     driver: local

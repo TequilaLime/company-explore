@@ -39,7 +39,6 @@ logging:
     org.apache.catalina: INFO
     com.sun.xml: WARN
     javax.xml: WARN
-    org.hibernate: ERROR
     org.springframework: WARN
     org.springframework.web: WARN
     feign.Logger: WARN
