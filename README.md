@@ -14,7 +14,20 @@
 - To run application on your local device, you shall find spring boot plugin available: 
     - `mvn spring-boot:run`
     
+# End-points 
+
+API end-point available:
+
+The end-point returns the company id, name, and a list of article ids where, presumably, the company was mentioned.
+
+`GET http://localhost:8080/company-explore/company-mentions?page=0&size=20`
+
+`curl --location --request GET 'http://localhost:8080/company-explore/company-mentions?page=0&size=20`
+
+    
 # Implementation & Tests
+
+Throughout the whole week, I only had an opportunity to sit down and work for one evening, therefore I feel like the solution came up with limited implementation. 
 
 For this exercise, I purposely didn't try to use Abstractions and Generics much, as the exercise is small and narrow.
 
